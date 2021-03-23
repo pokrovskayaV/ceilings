@@ -1,0 +1,25 @@
+include mixins.pug
+
+.materials(id="materials")
+  .materials__container.container
+    .stages__block-title.block-title
+      .block-title__wrapper
+        span.block-title__number 03
+        p.block-title__text Изготовление полотна
+    p.materials__title.title <span class="semi-bold">Потолки будут прочными</span> и выдержат даже залп из бутылки шампанского на каждом празднике
+    p.materials__subtitle.subtitle После заключения договора мы изготавливаем полотно с использованием исключительно <span class="semi-bold">качественных и сертифицированных материалов</span> на ваш выбор и бюджет
+    .materials__content
+      .materials__facts
+        +material-fact('../img/icons/nose.png','Без запаха и аллергенов')
+        +material-fact('../img/icons/hands.png','Легко ухаживать')
+        +material-fact('../img/icons/shine.png','Не теряют<br> внешний вид')
+        +material-fact('../img/icons/smell.png','Не впитывают запах')
+        +material-fact('../img/icons/flood.png','Выдержат любой затоп')
+        +material-fact('../img/icons/taped.png','Полотна<br> без швов')
+      .materials__bottom-block
+        p.materials__text Всё это благодаря качественным <span class="bold">оригинальным плёнкам ПВХ:</span>
+        .materials__logos
+          +logo('../img/msdClassic.png','MSD Classic (Китай)','от 400₽ за м<sup>2</sup>','../img/certificate-big-1.jpg')
+          +logo('../img/msdPremium.png','MSD Premium (Китай)', 'от 500₽ за м<sup>2</sup>','../img/certificate-big-1.jpg')
+          +logo('../img/pongs.png','Pongs (Германия)','от 600₽ за м<sup>2</sup>','../img/certificate-big-2.jpg')
+        

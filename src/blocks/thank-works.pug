@@ -1,0 +1,22 @@
+include mixins.pug
+
+.work(id="work")
+  .work__container.container
+    p.work__title.title А теперь Вы можете посмотреть <span class="semi-bold"> ещё больше проектов</span>, выполненных нашими опытными мастерами
+    .work__content
+      +work-item('../img/works/twork-big-01.jpg','../img/works/twork-min-01.jpg','Одноуровневый матовый потолок, ','8 м2','ул. Почтовая, 21 ')
+      +work-item('../img/works/twork-big-02.jpg','../img/works/twork-min-02.jpg','Двухуровневый парящий потолок,','10 м2', 'ул. Поморская, 13')
+      +work-item('../img/works/twork-big-03.jpg','../img/works/twork-min-03.jpg','Потолок с фотопечатью,','12 м2', 'пр. Троицкий, 12 ')
+      +work-item('../img/works/twork-big-04.jpg','../img/works/twork-min-04.jpg','Потолок с трековым освещением,','14 м2', 'ул. Розы Люксембург, 12')
+      +work-item('../img/works/twork-big-05.jpg','../img/works/twork-min-05.jpg','Потолок с фотопечатью,','9 м2', 'ул. Логинова, 23')
+      +work-item('../img/works/twork-big-06.jpg','../img/works/twork-min-06.jpg','Потолок со световыми линиями,','12 м2', 'ул. Попова, 25')
+      +work-item('../img/works/twork-big-07.jpg','../img/works/twork-min-07.jpg','Двухуровневый потолок с подсветкой, ','14 м2', 'ул. Карла Маркса, 13')(class='_hidden')
+      +work-item('../img/works/twork-big-08.jpg','../img/works/twork-min-08.jpg','Одноуровневый матовый потолок,','15 м2', 'ул. Гайдара, 47')(class='_hidden')
+      +work-item('../img/works/twork-big-09.jpg','../img/works/twork-min-09.jpg','Одноуровневый матовый потолок,','14 м2', 'пр.Обводный, 97')(class='_hidden')
+      +work-item('../img/works/twork-big-10.jpg','../img/works/twork-min-10.jpg','Двухуровневый потолок с фотопечатью,','11 м2', 'ул. Логинова, 53')(class='_hidden')
+      +work-item('../img/works/twork-big-11.jpg','../img/works/twork-min-11.jpg','Одноуровневый матовый потолок,','10 м2', 'ул. Садовая, 56')(class='_hidden')
+      +work-item('../img/works/twork-big-12.jpg','../img/works/twork-min-12.jpg','Двухуровневый потолок с фотопечатью,','8 м2', 'Набережная Северной Двины, 95')(class='_hidden')
+      +work-item('../img/works/twork-big-13.jpg','../img/works/twork-min-13.jpg','Потолок со световыми линиями,','13 м2', 'пр. Новгородский, 35')(class='_hidden')
+      +work-item('../img/works/twork-big-14.jpg','../img/works/twork-min-14.jpg','Потолок с трековым освещением,','12 м2', 'ул. Шабалина, 30')(class='_hidden')
+      +work-item('../img/works/twork-big-15.jpg','../img/works/twork-min-15.jpg','Двухуровневый потолок,','10 м2', 'ул. Выучейского, 57')(class='_hidden')
+    button.work__btn Показать ещё

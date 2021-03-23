@@ -1,0 +1,17 @@
+include mixins.pug
+
+header.header#header
+  .header__container
+    .header__content
+      .header__left-block
+        .header__logo.logo-main
+          .logo-main__title Комфорт<br> плюс
+          .logo-main__descriptor._1 Установка натяжных потолков <br>за 24 часа по Архангельской   области
+          .logo-main__descriptor._2 натяжные<br> потолки
+      .header__right-block
+        .header__tel(data-da="menu__content,2,1000")
+          p.header__time Звоните с 8:00 до 22:00
+          a.header__number(href="tel:+79115540401") &#43; 7 (911) 554-04-01
+        a.header__btn(href="#popup_1" class="popup-link" data-da="menu__content,3,620") Перезвоните мне
+a(href="#menu" class="popup-link").header__burger
+  img(src="../img/icons/burger.svg", alt="")

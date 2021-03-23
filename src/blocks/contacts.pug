@@ -1,0 +1,36 @@
+.contacts(id="contacts")
+  .contacts__container.container
+    .contacts__block-title.block-title
+      .block-title__wrapper
+        p.block-title__text Контакты
+    p.contacts__title.title Остались вопросы?<br>Вы можете <span class="semi-bold">связаться с нами </span>любым удобным способом
+    .contacts__content
+      .contacts__left-block 
+        p.contacts__subtitle Заполните форму, чтобы <span class="semi-bold">заказать звонок</span> <br>и записаться на бесплатную консультацию
+        form(action="thank-you.html", method="#").contacts__form
+          .contacts__input-block
+            label.block__label.contacts__label
+              input.block__input.contacts__input(type='tel' name='number' placeholder='Введите ваш номер' required="")
+              img.block__input-icon.contacts__input-icon(src='../img/icons/tel.svg' alt='')
+            input.contacts__btn.btn__sta(type="submit", value="Перезвоните мне" required)
+          .contacts__btn-block
+            span.contacts__subtext После записи Вам в течение дня перезвонит менеджер, чтобы уточнить удобное время и формат консультации
+        img.contacts__img._tel(src="../img/telephone.png", alt="")
+      .contacts__right-block 
+        p.contacts__subtitle <span class="semi-bold">Позвоните</span> по номеру телефона ниже<br> <span class="semi-bold">или напишите </span> в мессенджере в рабочее время
+        .contacts__data
+          .contacts__top
+            span.contacts__text Наш номер телефона:
+            a(href="tel:+79115540401").contacts__tel &#43; 7 (911) 554-04-01
+            span.contacts__text Мы в мессенджерах:
+            .contacts__icons 
+              a(href="https://vk.com/potolkipodkluch29") 
+                img(src="../img/icons/vk.png", alt="")
+              a(href="https://api.whatsapp.com/send?phone=<PHONE>") 
+                img(src="../img/icons/whatsup.png", alt="")
+          .contacts__mode
+            span.contacts__day Работаем каждый день
+            span.contacts__time с 8:00 до 22:00
+        img.contacts__img._book(src="../img/book.png", alt="")
+
+        

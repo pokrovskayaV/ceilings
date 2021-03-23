@@ -1,0 +1,347 @@
+@import 'reasons';
+@import 'stages';
+@import 'choise';
+@import 'measurer';
+@import 'materials';
+@import 'installation';
+@import 'acceptance';
+@import 'work';
+@import 'reviews';
+@import 'shares';
+@import 'questions';
+@import 'contacts';
+@import 'modals';
+@import 'quiz';
+
+.main {
+  position: relative;
+  z-index: 0;
+
+  &-wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    padding-bottom: 53px;
+
+    @media (max-width:474px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__left-block {
+    @media (max-width:769px) {
+      max-width: 100%;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    top: -120px;
+    width: 100vw;
+    height: 812px;
+
+    @media (max-width:860px) {
+      transform: scale(-1, 1)
+    }
+
+    img {
+      object-fit: cover;
+      object-position: left;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+    }
+  }
+
+  &__photo {
+    position: absolute;
+    left: 50vw;
+    top: -272px;
+    width: 1127px;
+    height: 1127px;
+    border-radius: 50%;
+
+    @media (max-width:1670px) {
+      max-width: 1027px;
+      width: 100%;
+      height: 1027px;
+      top: -194px;
+    }
+
+    @media (max-width:1270px) {
+      max-width: 907px;
+      height: 907px;
+    }
+
+    @media (max-width:1100px) {
+      width: auto;
+      height: 780px;
+      left: 57vw;
+      top: -1px;
+    }
+
+    @media (max-width:860px) {
+      display: none;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: left;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .offer {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width:1270px) {
+      margin-top: 40px;
+    }
+
+    @media (max-width:474px) {
+      margin-top: 30px;
+      align-items: center;
+      text-align: center;
+    }
+
+    &__cities {
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 21px;
+      color: rgba(0, 0, 0, 0.9);
+      margin: 22px 0 0 0;
+
+      @media (max-width:1270px) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      @media (max-width:330px) {
+        font-size: 13px;
+      }
+    }
+
+    &__title {
+      font-family: 'TTNorms';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 42px;
+      line-height: 45px;
+      color: rgb(0, 0, 0);
+      margin: 22px 0 0 0;
+      white-space: nowrap;
+
+      @media (max-width:1270px) {
+        font-size: 38px;
+        line-height: 115%;
+      }
+
+      @media (max-width:620px) {
+        font-size: 32px;
+      }
+
+      @media (max-width:474px) {
+        font-size: 25px;
+      }
+
+      @media (max-width:330px) {
+        font-size: 22px;
+      }
+    }
+
+    &__subtitle {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 130%;
+      font-family: 'Montserrat';
+      color: #000000f6;
+      position: relative;
+      margin: 30px 0 40px;
+      padding: 10px 20px;
+      background: rgba(255, 255, 255, 0.4);
+      box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      max-width: 440px;
+
+      @media (max-width:1270px) {
+        font-size: 16px;
+        max-width: 390px;
+      }
+
+      @media (max-width:620px) {
+        font-size: 14px;
+      }
+
+      @media (max-width:474px) {
+        margin: 40px 0;
+        max-width: 400px;
+
+        br {
+          display: none;
+        }
+      }
+
+      @media (max-width:330px) {
+        font-size: 13px;
+      }
+    }
+
+    &__btn {
+      max-width: 390px;
+    }
+  }
+
+  &__facts {
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+    margin-top: 55px;
+
+    @media (max-width:769px) {
+      margin-top: 60px;
+    }
+
+    @media (max-width:330px) {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 40px;
+    }
+
+    @media (max-width:474px) {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      margin-top: 40px;
+    }
+  }
+
+  .fact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.81);
+    backdrop-filter: blur(15px);
+    border-radius: 15px;
+    max-width: 263px;
+    width: 500px;
+    padding: 20px 0;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 24px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 95%;
+      height: 90%;
+      border-radius: 15px;
+      border: 1px dashed rgb(221, 221, 221);
+
+      @media (max-width:474px) {
+        width: 96.5%;
+        height: 90%;
+      }
+    }
+
+    @media (max-width:1270px) {
+      background: rgb(255, 255, 255);
+      max-width: 200px;
+    }
+
+    @media (max-width:769px) {
+      padding: 10px 5px;
+    }
+
+    @media (max-width:620px) {
+      &:not(:last-child) {
+        margin-right: 8px;
+      }
+    }
+
+    @media (max-width:474px) {
+      flex-direction: row;
+      justify-content: start;
+      margin-bottom: 8px;
+      width: 100%;
+      max-width: 100%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+      }
+    }
+
+    &__img {
+      max-width: 60px;
+      width: 100%;
+      object-fit: cover;
+
+      @media (max-width:1270px) {
+        max-width: 50px;
+      }
+
+      @media (max-width:769px) {
+        max-width: 40px;
+      }
+
+      @media (max-width:474px) {
+        max-width: 35px;
+        margin: 0 20px;
+      }
+
+      @media (max-width:424px) {
+        max-width: 35px;
+      }
+    }
+
+    &__title {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 17px;
+      line-height: 20px;
+      text-align: center;
+      color: rgba(18, 16, 14, 0.85);
+      margin: 10px 0 0 0;
+
+      @media (max-width:1270px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+
+      @media (max-width:769px) {
+        margin: 5px 0 0 0;
+        font-size: 12px;
+        line-height: 14px;
+      }
+
+      @media (max-width:474px) {
+        margin: 0;
+
+        br {
+          display: none;
+        }
+      }
+
+      @media (max-width:424px) {
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+  }
+}

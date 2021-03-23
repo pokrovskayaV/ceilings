@@ -1,0 +1,138 @@
+.questions {
+  margin-top: 150px;
+
+  @media (max-width:860px) {
+    margin-top: 100px;
+  }
+
+  &__content {
+    margin-top: 73px;
+
+    @media (max-width:860px) {
+      margin-top: 53px;
+    }
+  }
+}
+
+.accordion {
+  background-color: rgb(255, 255, 255);
+  border-radius: 35px;
+  box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.116);
+  overflow: hidden;
+
+  :last-child {
+
+    button,
+    .accordion-content {
+      border-bottom: none !important;
+    }
+  }
+
+  button {
+    position: relative;
+    font-family: 'Raleway';
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 24px 35px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.911);
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    max-height: 70px;
+    border-bottom: 1px solid #dddddd;
+
+    @media (max-width:620px) {
+      max-height: 90px;
+      padding-right: 55px;
+    }
+
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 45%;
+      transform: translate(0, -50%);
+      background: url('../../img/icons/arrow-question.svg') no-repeat;
+      background-size: contain;
+      right: 35px;
+      width: 25px;
+      height: 11px;
+      transition: all 0.3s linear;
+
+      @media (max-width:1270px) {
+        width: 20px;
+        height: 8px;
+        right: 25px;
+      }
+    }
+
+    @media (max-width:1270px) {
+      font-size: 18px;
+      line-height: 20px;
+      padding: 20px 30px;
+    }
+
+    @media (max-width:620px) {
+      font-size: 16px;
+      line-height: 18px;
+    }
+
+    @media (max-width:474px) {
+      font-size: 15px;
+      line-height: 17px;
+    }
+  }
+
+  button[aria-expanded='true'] {
+    background: linear-gradient(93.27deg, #FFFACE -2.41%, #FFCD9F 80.14%);
+    border-bottom: none;
+
+    .icon {
+      transform: rotate(180deg);
+      transition: all 0.3s linear;
+    }
+
+    +.accordion-content {
+      opacity: 1;
+      max-height: 250px;
+      border-bottom: 1px solid #E6E6E6;
+      transition: max-height 0.4s linear .3s;
+
+      @media (max-width:860px) {
+        max-height: 500px;
+      }
+    }
+  }
+
+  .accordion-content {
+    opacity: 1;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+
+    p {
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 130%;
+      margin: 0;
+      padding: 24px 35px;
+
+      @media (max-width:1270px) {
+        font-size: 16px;
+        padding: 20px 30px;
+      }
+
+      @media (max-width:620px) {
+        font-size: 15px;
+        line-height: 18px;
+      }
+
+      @media (max-width:474px) {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
+  }
+}

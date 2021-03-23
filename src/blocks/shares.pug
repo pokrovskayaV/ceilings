@@ -1,0 +1,16 @@
+include mixins.pug
+
+.shares(id="shares")
+  .shares__container.container
+    .shares__block-title.block-title
+      .block-title__wrapper
+        p.block-title__text Акции
+    p.shares__title.title Любим <span class="semi-bold">радовать наших клиентов </span>подарками и качественными услугами по приятной цене
+    p.shares__subtitle.subtitle При заказе через сайт Вам доступны несколько различных акций на выбор
+    .shares__content
+      .shares__items
+        +share-item('../img/share1.jpg','3-й потолок бесплатно','При заказе двух потолков третий в подарок')
+        +share-item('../img/share2.jpg','Светильники в подарок','При заказе натяжного потолка, светильники и их    монтаж в подарок')
+        +share-item('../img/share3.jpg','Карниз в подарок','При заказе натяжного потолка, потолочный карниз и его монтаж в подарок')
+        +share-item('../img/share4.jpg','Скидка 10%','Приведите друга и получите скидку 10%')
+      a(href="#popup_5" class="popup-link").btn__sta.shares__btn Получить подарок

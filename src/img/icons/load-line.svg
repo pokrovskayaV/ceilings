@@ -1,0 +1,17 @@
+<svg width="72" height="12" viewBox="0 0 72 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0)">
+<rect width="72" height="12" fill="#FFE563"/>
+<line x1="1.5" y1="-1.5" x2="17.091" y2="-1.5" transform="matrix(0.59077 -0.80684 0.793007 0.609212 1 14)" stroke="#FFC34F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1.5" y1="-1.5" x2="17.091" y2="-1.5" transform="matrix(0.59077 -0.80684 0.793007 0.609212 11 14)" stroke="#FFC34F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1.5" y1="-1.5" x2="17.091" y2="-1.5" transform="matrix(0.59077 -0.80684 0.793007 0.609212 21 14)" stroke="#FFC34F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1.5" y1="-1.5" x2="17.091" y2="-1.5" transform="matrix(0.59077 -0.80684 0.793007 0.609212 31 14)" stroke="#FFC34F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1.5" y1="-1.5" x2="17.091" y2="-1.5" transform="matrix(0.59077 -0.80684 0.793007 0.609212 41 14)" stroke="#FFC34F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1.5" y1="-1.5" x2="17.091" y2="-1.5" transform="matrix(0.59077 -0.80684 0.793007 0.609212 51 14)" stroke="#FFC34F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="1.5" y1="-1.5" x2="17.091" y2="-1.5" transform="matrix(0.59077 -0.80684 0.793007 0.609212 61 14)" stroke="#FFC34F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0">
+<rect width="72" height="12" fill="white"/>
+</clipPath>
+</defs>
+</svg>

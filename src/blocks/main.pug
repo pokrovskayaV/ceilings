@@ -1,0 +1,23 @@
+include mixins.pug
+
+main.main(id="main")
+  .main__bg
+    img(src="../img/main-bg.jpg", alt="")
+  .main__photo
+    img(src="../img/main-photo-2.png", alt="")
+  .main__container.container
+    .main__content
+      .main__left-block
+        .main__offer.offer
+          p.offer__cities Архангельск, Северодвинск, Новодвинск
+          h1.offer__title Установим <span class="bold"> идеально ровные <br>натяжные потолки</span> за 24 часа <br>без предоплат с гарантией 
+          p.offer__subtitle Ответьте на 6 вопросов за 1 минуту и <span class="medium">узнайте<br> стоимость Вашего потолка + получите карниз<br> или светильники в подарок</span> 
+          a.offer__btn.btn__sta(href="#popup_3" class="popup-link") Рассчитать стоимость + выбрать подарок 
+        .main__facts
+          +main-fact("../img/icons/contract.png","Работа по договору<br> без предоплаты")
+          +main-fact("../img/icons/clock.png","Монтаж от 1.5 часов <br>без пыли")
+          +main-fact("../img/icons/garantee.png","Гарантия 15 лет")
+
+a(href="#header").btn__scroll.js-scroll-to
+  img(src="../img/icons/arrow-btn-top.svg", alt="")
+  

@@ -1,0 +1,26 @@
+include mixins.pug
+
+.stages(id="stages")
+  .stages__container.container
+    .stages__block-title.block-title
+      .block-title__wrapper
+        p.block-title__text Этапы работы
+    p.stages__title.title Приняли решение <span class="semi-bold">в пользу натяжных потолков?</span>
+    p.stages__subtitle.subtitle Ознакомьтесь с кратким описанием каждого <span class="semi-bold">этапа работы</span> с нами, <br class="_media_620">от создания дизайна до вашей восхищенной оценки
+    .stages__content
+      .stages__bg 
+        img(src="../img/line-stages.png", alt="")
+      .stages__row
+        +stage('01','../img/ceiling.png','Выбор потолка','Вы знакомитесь с нашим   ассортиментом и определяетесь, <br>что примерно нравится')
+        .stage
+          .stage__img-block
+            span.stage__number 02
+            .stage__img
+              img(src="../img/catalog.png")
+          div(class='stage__body')
+            .stage__title Бесплатный замер
+            .stage__text Наш замерщик поможет вам с   выбором, рассчитает стоимость и составит договор без предоплаты
+            a.offer__btn.btn__sta(data-da="stages__content, 3, 860" href="#popup_2" class="popup-link") Пригласить мастера на замер
+      .stages__row
+        +stage('03','../img/material.png','Изготовление полотна','Мы изготавливаем ваше   полотно с использованием качественных и сертифицированных материалов ')
+        +stage('04','../img/tool.png','Установка вашего потолка','Монтаж занимает от 1.5   часов с использованием взрывобезопасного оборудования и пылеуловителей')

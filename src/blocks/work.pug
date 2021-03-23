@@ -1,0 +1,32 @@
+include mixins.pug
+
+.work(id="work")
+  .work__container.container
+    .work__block-title.block-title
+      .block-title__wrapper
+        p.block-title__text Наши работы
+    p.work__title.title <span class="semi-bold">С 2008 года сделали более 2500 проектов </span> разной сложности<span class="_media474">, от простых до многоуровневых конструкций</span> 
+    p.work__subtitle.subtitle Посмотрите <span class="semi-bold">примеры выполненных работ,</span> которые уже делали наши мастера
+    .work__content
+      +work-item('../img/works/work-big-1.jpg','../img/works/work-min-1.jpg','Двухуровневый глянцевый потолок, ','11 м2','ул. Галушина, 24 ')
+      +work-item('../img/works/work-big-2.jpg','../img/works/work-min-2.jpg','Многоуровневый потолок,','24 м2', 'пл. Ленина, 5')
+      +work-item('../img/works/work-big-3.jpg','../img/works/work-min-3.jpg','Двухуровневый потолок с подсветкой,','12 м2', 'пр. Новгородский, 174')
+      +work-item('../img/works/work-big-4.jpg','../img/works/work-min-4.jpg','Потолок с витражной вставкой,','14 м2', 'пр. Советских Космонавтов, 55 ')
+      +work-item('../img/works/work-big-5.jpg','../img/works/work-min-5.jpg','Двухуровневый потолок,','9 м2', 'ул. Стрелковая, 25')
+      +work-item('../img/works/work-big-6.jpg','../img/works/work-min-6.jpg','Двухуровневый потолок со вставкой,','12 м2', 'ул. Папанина, 11')
+      +work-item('../img/works/work-big-7.jpg','../img/works/work-min-7.jpg','Двухуровневый матовый потолок, ','8 м2', 'пр. Обводный канал, 42 ')(class='_hidden')
+      +work-item('../img/works/work-big-8.jpg','../img/works/work-min-8.jpg','Двухуровневый потолок с подсветкой,','15 м2', 'ул. Вологодская, 30 ')(class='_hidden')
+      +work-item('../img/works/work-big-9.jpg','../img/works/work-min-9.jpg','Многоуровневый потолок с подсветкой,','21 м2', 'ул. Воскресенская, 59 ')(class='_hidden')
+      +work-item('../img/works/work-big-10.jpg','../img/works/work-min-10.jpg','Двухуровневый потолок с подсветкой,','12 м2', 'ул. Выучейского, 16 ')(class='_hidden')
+      +work-item('../img/works/work-big-11.jpg','../img/works/work-min-11.jpg','Двухуровневый потолок с фотопечатью,','12 м2', 'ул. Свободы, 25 к1 ')(class='_hidden')
+      +work-item('../img/works/work-big-12.jpg','../img/works/work-min-12.jpg','Одноуровневый матовый потолок,','7 м2', 'Набережная Северной Двины, 71')(class='_hidden')
+      +work-item('../img/works/work-big-13.jpg','../img/works/work-min-13.jpg','Двухуровневый потолок,','10 м2', 'ул. Попова, 27')(class='_hidden')
+      +work-item('../img/works/work-big-14.jpg','../img/works/work-min-14.jpg','Двухуровневый потолок с фотопечатью,','9 м2', 'ул. Карла Маркса, 13 ')(class='_hidden')
+      +work-item('../img/works/work-big-15.jpg','../img/works/work-min-15.jpg','Потолок со световыми линиями,','13 м2', 'пр. Московский, 43 к3')(class='_hidden')
+      +work-item('../img/works/work-big-16.jpg','../img/works/work-min-16.jpg','Матовый потолок с подсветкой,','8м2', 'ул. Поморская, 13 ')(class='_hidden')
+    button.work__btn Показать ещё
+    .application
+      .application__text-block
+        .application__title <span class="bold">Узнайте точную стоимость</span> вашего потолка со всеми акциями, а также <span class="bold"> выберите подарок</span>
+        a(href="#popup_3" class="popup-link").application__btn.btn__sta._work Рассчитать стоимость и выбрать подарок
+      img(src="../img/boxes.png", alt="").application__img

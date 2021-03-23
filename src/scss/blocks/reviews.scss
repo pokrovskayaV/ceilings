@@ -1,0 +1,205 @@
+.reviews {
+  margin-top: 150px;
+
+  @media (max-width:860px) {
+    margin-top: 100px;
+  }
+
+  &__content {
+    margin: 73px auto 0;
+
+    @media (max-width:860px) {
+      margin-top: 53px;
+    }
+  }
+
+  &__slider {
+    position: relative;
+  }
+
+  .swiper-slide {
+    max-width: 532px;
+
+    @media (max-width:620px) {
+      max-width: 400px;
+    }
+
+    @media (max-width:474px) {
+      max-width: 300px;
+    }
+  }
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 37px;
+    height: 37px;
+    background-size: fill;
+    position: absolute;
+    bottom: -62px;
+    right: 0;
+    background: url('../../img/icons/arrow-review.svg') no-repeat;
+
+    @media (max-width:860px) {
+      display: none;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 50%;
+    transform: translate(-55px, 0) rotate(180deg);
+  }
+
+  .swiper-button-next {
+    right: 50%;
+    transform: translate(50px, 0);
+  }
+
+  .swiper-button-disabled {
+    opacity: 0.7;
+  }
+
+  .swiper-slide {
+    opacity: 0.5;
+  }
+
+  .swiper-slide-active {
+    opacity: 1;
+
+    .review__img {
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+
+  .review {
+    background: #ffffff;
+    box-shadow: 0px 4px 8px 4px rgba(0, 0, 0, 0.116);
+    border-radius: 15px;
+    border: 0.5px dashed rgb(219, 219, 219);
+    padding: 27px;
+    height: 355px;
+    box-sizing: border-box;
+    display: flex;
+
+    @media (max-width:1270px) {
+      height: 330px;
+    }
+
+    @media (max-width:1270px) {
+      padding: 20px;
+    }
+
+    @media (max-width:620px) {
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      align-items: center;
+      height: 260px;
+    }
+
+    @media (max-width:474px) {
+      height: 280px;
+    }
+
+    &__link {
+      width: 50%;
+
+      @media (max-width:1270px) {
+        width: 40%;
+      }
+
+      @media (max-width:620px) {
+        max-width: 100%;
+        position: relative;
+        margin: 20px 0;
+        width: 130px;
+
+        &::after {
+          content: 'Смотреть отзыв';
+          position: absolute;
+          bottom: -10px;
+          font-size: 15px;
+          font-weight: bold;
+          text-align: center;
+          text-decoration-line: underline;
+          color: #E1A200;
+        }
+
+        @media (max-width:474px) {
+          font-size: 14px;
+          line-height: 16px;
+          margin: 10px 0;
+        }
+      }
+    }
+
+    &__img {
+      max-height: 100%;
+
+      @media (max-width:620px) {
+        display: none;
+      }
+    }
+
+    &__body {
+      margin-left: 21px;
+      max-width: 55%;
+
+      @media (max-width:620px) {
+        margin-left: 0px;
+        max-width: 100%;
+
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      position: relative;
+      margin-bottom: 27px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -16px;
+        left: 0;
+        width: 50px;
+        height: 2px;
+        background-color: #FFC75A;
+      }
+
+      @media (max-width:1270px) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      @media (max-width:620px) {
+        font-size: 15px;
+        line-height: 17px;
+      }
+    }
+
+    &__text {
+      font-size: 17px;
+      line-height: 20px;
+
+      @media (max-width:1270px) {
+        font-size: 16px;
+        line-height: 18px;
+      }
+
+      @media (max-width:620px) {
+        font-size: 15px;
+        line-height: 130%;
+      }
+
+      @media (max-width:474px) {
+        font-size: 14px;
+        line-height: 130%;
+      }
+    }
+  }
+}

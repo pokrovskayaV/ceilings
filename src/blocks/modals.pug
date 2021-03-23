@@ -1,0 +1,146 @@
+.popup#popup_1.call
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .call__bg
+      .call__content
+        h3.call__title Оставьте заявку на <span class="semi-bold">бесплатный звонок</span> от нашего специалиста<br> с опытом работы 13 лет
+        p.call__text Он ответит на любые Ваши вопросы, поможет определиться с выбором   дизайна и, если нужно, запишет Вас на бесплатный замер
+        form(action="/mail.php", method="POST").call__form.modal__form
+          label.block__label.contacts__label
+              input.block__input.contacts__input(type='tel' name='number' placeholder='Введите ваш номер' required="")
+              img.block__input-icon.contacts__input-icon(src='../img/icons/tel.svg' alt='')
+          input.modal__btn.btn__sta(type="submit", value="Перезвоните мне")
+          input(type="hidden" name="act" value="order")
+
+
+.popup#popup_2.measurement
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .measurement__content
+        h3.measurement__title.modal__title Закажите<span class="semi-bold"> бесплатный </span>выезд Дениса -  нашего замерщика 
+        p.measurement__text.modal__text Он поможет определиться с дизайном, покажет каталог фактур и цветов, сделает точный замер, рассчитает стоимость, а также предложит выбрать подарок
+        form(action="/mail.php", method="POST").measurement__form.modal__form
+          label.block__label.contacts__label
+              input.block__input.contacts__input(type='tel' name='number' placeholder='Введите ваш номер' required="")
+              img.block__input-icon.contacts__input-icon(src='../img/icons/tel.svg' alt='')
+          input(type="hidden" name="act" value="order")
+          input.measurement__btn.btn__sta(type="submit", value="Пригласить мастера на замер")
+        span.measurement__subtext Замер бесплатный даже при отказе от услуг
+      .measurement__bg
+        img(src="../img/mesurement.png", alt="")
+
+  
+.popup#popup_3.quiz__wrapper
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      include quiz.pug
+          
+
+
+.popup#popup_4.lighting
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .lighting__bg
+      h3.lighting__title.modal__title А Вы знали, что <span class="semi-bold">90% успеха</span> вашего натяжного <br>потолка и интерьера - это <span class="semi-bold">освещение?</span>
+      .lighting__content
+        .lighting__text-block
+          p.lighting__text Наш замерщик Денис окажет профессиональную бесплатную консультацию по освещению, создаст схему размещения и поможет выбрать лучший вариант для Вашего интерьера
+          form(action="/mail.php", method="POST").lighting__form.modal__form
+            label.block__label.contacts__label
+              input.block__input.contacts__input(type='tel' name='number' placeholder='Введите ваш номер' required="")
+              img.block__input-icon.contacts__input-icon(src='../img/icons/tel.svg' alt='')
+            input.lighting__btn.btn__sta(type="submit", value="Пригласить мастера на замер")
+            input(type="hidden" name="act" value="order")
+        .lighting__photos(data-da="lighting__text-block, 1, 860")
+          .lighting__photo
+            img(src="../img/lamp.jpg", alt="")
+            .lighting__descr 
+              p Точечные светильники
+          .lighting__photo
+            img(src="../img/chandelier.jpg", alt="")
+            .lighting__descr  
+              p Подвесные люстры
+          .lighting__photo
+            img(src="../img/tape.jpg", alt="")
+            .lighting__descr 
+              p Светодиодная лента
+          .lighting__photo
+            img(src="../img/track.jpg", alt="")
+            .lighting__descr 
+              p Трековая система
+    
+
+.popup#popup_5.gift
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .gift__bg
+      .gift__content
+        h3.call__title.gift__title Вы можете записаться на  бесплатный замер и <span class="semi-bold">закрепить подарок</span> за Вашим номером 
+        form(action="/mail.php", method="POST").gift__form.modal__form
+          label.modal__label(for="gifts") Выберите подарок
+          select.gift__select(name="gifts" id="gifts")
+            option.gift__option(value="Карниз") Карниз
+            option.gift__option(value="Светильники") Светильники
+          label.block__label.contacts__label
+              input.block__input.contacts__input(type='tel' name='number' placeholder='Введите ваш номер' required="")
+              img.block__input-icon.contacts__input-icon(src='../img/icons/tel.svg' alt='')
+          input(type="hidden" name="act" value="order")
+          .gift__btn-block
+            input.gift__btn.btn__sta(type="submit", value="Получить подарок")
+            span.gift__subtext Замер бесплатный даже при отказе от услуг
+
+
+.popup#popup_6.harpoon
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .harpoon__content
+        .harpoon__text-block
+          h3.harpoon__title Что такое гарпун?
+          p.harpoon__text Гарпун, это прочная окантовка, которая приваривается к потолкам специальным станком прессом, с его помощью, полотно крепится к алюминиевому стеновому профилю. 
+          p.harpoon__text От качества огарпунивания зависит, насколько долго ваш потолок провисит на профилях, такая система крепления и является французской технологией, придуманной компанией BARISOL - создателями натяжных потолков.
+        img.harpoon__img(src="../img/harpoon-img.png", alt="")
+
+
+.popup#popup_7.requisites
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .requisites__content
+        h3.requisites__title Реквизиты
+        p.requisites__text Общество с ограниченной ответственностью  "Комфорт плюс"
+        p.requisites__text Юридический адрес:<br> 163000, Архангельская область, город Архангельск, улица Володарского, 11
+        p.requisites__text Руководитель: Шошин Денис Анатольевич
+        p.requisites__text ОГРН: 1122901014202
+        p.requisites__text ИНН: 2901228043
+        p.requisites__text КПП: 290101001
+
+
+.popup#popup_8.privacy
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .privacy__content
+        h3.privacy__title Политика конфиденциальности
+        p.privacy__text Любая информация, представленная на данном сайте, носит исключительно информационный характер и не при каких условиях не является публичной офертой, определяемой положениями статьи 437 ГК РФ. Отправляя сведения через любую электронную форму на этом сайте, Вы даете согласие на обработку ваших персональных данных.
+
+
+.popup#menu.menu
+  .popup__body 
+    .popup__content
+      button.modal__close.popup__close.close-popup
+      .menu__content
+        ul.menu__list
+          li.menu__item 
+            a(href="#work").menu__link.js-scroll-to Наши работы
+          li.menu__item 
+            a(href="#reviews").menu__link.js-scroll-to Отзывы
+          li.menu__item 
+            a(href="#shares").menu__link.js-scroll-to Акции
+          li.menu__item 
+            a(href="#contacts").menu__link.js-scroll-to Контакты

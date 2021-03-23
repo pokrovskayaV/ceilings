@@ -1,0 +1,69 @@
+mixin main-fact(src,title)
+  .fact
+    img.fact__img(src=src, alt="")
+    p.fact__title!=title
+  
+mixin reasons-title-left(src,title)
+  .reasons__item-title&attributes(attributes)
+    p.reasons__item-text._left=title
+    img.reasons__item-img(src=src, alt="")
+
+mixin reasons-title-right(src,title)
+  .reasons__item-title&attributes(attributes)
+    img.reasons__item-img(src=src, alt="")
+    p.reasons__item-text._right=title
+    
+
+mixin stage(number,src,title,text)
+  .stage
+    .stage__img-block
+      span.stage__number=number
+      .stage__img
+        img(src=src)
+    div(class='stage__body')&attributes(attributes)
+      .stage__title=title
+      .stage__text!=text
+  
+mixin choise-item(src,title,text)
+  .choise-item.item&attributes(attributes)
+    img.item__img(src=src loading="lazy")
+    .item__body
+      .item__title=title
+      .item__text!=text
+
+mixin material-fact(src,text)
+  .fact
+    img.fact__img(src=src)
+    .fact__text!=text
+
+mixin logo(src,title,text,srcBig)
+  .logo
+    img.logo__img(src=src)
+    .logo__body
+      .logo__title=title
+      .logo__text!=text
+    a(href=srcBig).logo__link Смотреть лицензию
+
+mixin work-item(srcBig,srcMin,title,square,text)
+  a(href=srcBig).item&attributes(attributes)
+    img.item__img(src=srcMin loading="lazy")
+    .item__body
+      p.item__title=title
+        span.item__square=square
+      p.item__street=text
+
+mixin review-item(src,srcBig,title,text)
+  .review&attributes(attributes)
+    a.review__link(href=srcBig)
+      img.review__img(src=src)
+    .review__body
+      .review__title=title
+      .review__text=text
+
+mixin share-item(src,title,text)
+  .share
+    img.share__img(src=src loading="lazy")
+    .share__title-block
+      p.share__title=title
+    .share__text-wrapper
+      p.share__text=text

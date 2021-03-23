@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru")
+  include blocks/head.pug
+  body
+    .wrapper
+      .wrapper__thank
+        include blocks/header.pug
+        include blocks/thank-main.pug
+        include blocks/thank-table.pug
+        include blocks/thank-works.pug
+        include blocks/thank-contact.pug
+        include blocks/thank-stages.pug
+        include blocks/reviews.pug
+        include blocks/shares.pug
+        include blocks/modals.pug
+        a.btn__sta.thank__btn(href="index.html") Вернуться на главную
+    script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+    script(src="js/lib/baguetteBox.min.js" type="text/javascript")
+    script(type="text/javascript" src="js/lib/popup.js")
+    script(type="text/javascript" src="js/lib/dinamic.js")
+    script(type="text/javascript" src="js/lib/thank-you.js")
