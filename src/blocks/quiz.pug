@@ -1,184 +1,194 @@
-section.quiz-section
-  .quiz__container
-    form#top.quiz__box.quiz.quiz1(method='POST' action='quiz.php')
-      .quiz__questions
-        .quiz__progress
-          .progress__line.line1
-            span.progress__color
-          .progress__line.line2
-            span.progress__color
-          .progress__line.line3
-            span.progress__color
-          .progress__line.line4
-            span.progress__color
-          .progress__line.line5
-            span.progress__color
-        .quiz__steps.steps
-          .quiz__step.quiz__step1
-            .steps__title Шаг 1
-            .steps__subtitle Конструкция
-          .quiz__step.quiz__step2
-            .steps__title Шаг 2
-            .steps__subtitle Фактура
-          .quiz__step.quiz__step3
-            .steps__title Шаг 3
-            .steps__subtitle Освещение
-          .quiz__step.quiz__step4
-            .steps__title Шаг 4
-            .steps__subtitle Подарок
-          .quiz__step.quiz__step5
-            .steps__title Шаг 5
-            .steps__subtitle Контакты
-        .quiz__questions-content
-          .step1.step
-            .question__main-title 1. Выберите конструкцию потолка
-            .step__content.question
-              .question__box.first__box
-                label.question__item
-                  input.question__radio(type='radio' name='construction' value='Одноуровневый' required)
-                  img.question__img(src='../img/construction_1.jpg' alt='Одноуровневый')
-                  p.question__title Одноуровневый
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='radio' name='construction' value='Двухуровневый')
-                  img.question__img(src='../img/construction_2.jpg' alt='Двухуровневый')
-                  p.question__title Двухуровневый
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='radio' name='construction' value='Многоуровневый')
-                  img.question__img(src='../img/construction_3.jpg' alt='Многоуровневый')
-                  p.question__title Многоуровневый
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='radio' name='construction' value='Не определился(-ась)')
-                  img.question__img(src='../img/construction_4.jpg' alt='Не определился(-ась)')
-                  p.question__title Не определился(-ась)
-                  span.question__check
-            .step__navigation
-              button.step__next
-                span.step__next_text Далее 
-                span.step__next_arrow
-          .step2.step
-            .question__main-title 2. Выберите фактуру потолка
-            .step__content.question
-              .question__box.first__box
-                label.question__item
-                  input.question__radio(type='radio' name='texture' value='Глянцевый')
-                  img.question__img(src='../img/texture_1.jpg' alt='Глянцевый')
-                  .question__title Глянцевый
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='radio' name='texture' value='Матовый')
-                  img.question__img(src='../img/texture_2.jpg' alt='Матовый')
-                  .question__title Матовый
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='radio' name='texture' value='Сатиновый')
-                  img.question__img(src='../img/texture_3.jpg' alt='Сатиновый')
-                  .question__title Сатиновый
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='radio' name='texture' value='Не определился(-ась)')
-                  img.question__img(src='../img/construction_4.jpg' alt='Не определился(-ась)')
-                  .question__title Не определился(-ась)
-                  span.question__check
-            .step__navigation
-              button.prev__btn Вернуться назад
-              button.step__next
-                span.step__next_text Далее 
-                span.step__next_arrow
-          .step3.step
-            .question__main-title 3. Выберите тип освещения (можно несколько вариантов)
-            .step__content.question
-              .question__box.second__box
-                label.question__item
-                  input.question__radio(type='checkbox' name='light[]' value='Люстра')
-                  img.question__img(src='../img/lighting_1.jpg' alt='')
-                  .question__title Люстра
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='checkbox' name='light[]' value='Точечные светильники')
-                  img.question__img(src='../img/lighting_2.jpg' alt='')
-                  .question__title Точечные светильники
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='checkbox' name='light[]' value='Трековое освещение')
-                  img.question__img(src='../img/lighting_3.jpg' alt='')
-                  .question__title Трековое освещение
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='checkbox' name='light[]' value='LED__светильники')
-                  img.question__img(src='../img/lighting_4.jpg' alt='')
-                  .question__title LED-светильники
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='checkbox' name='light[]' value='Светодиодные ленты')
-                  img.question__img(src='../img/lighting_5.jpg' alt='')
-                  .question__title Светодиодные ленты
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='checkbox' name='light[]' value='Не определился(-ась)')
-                  img.question__img(src='../img/construction_4.jpg' alt='')
-                  .question__title Не определился(-ась)
-                  span.question__check
-            .step__navigation
-              button.prev__btn Вернуться назад
-              button.step__next
-                span.step__next_text Далее 
-                span.step__next_arrow
-          .step4.step
-            .question__main-title 4. Выберите подарок
-            .step__content.question
-              .question__box.third__box
-                label.question__item
-                  input.question__radio(type='radio' name='gifts' value='Карниз')
-                  img.question__img(src='../img/gifts_1.jpg' alt='')
-                  .question__title Карниз
-                  span.question__check
-                label.question__item
-                  input.question__radio(type='radio' name='gifts' value='Светильники')
-                  img.question__img(src='../img/gifts_2.jpg' alt='')
-                  .question__title Светильники
-                  span.question__check
-            .step__navigation
-              button.prev__btn Вернуться назад
-              button.step__next 
-                span.step__next_text Далее 
-                span.step__next_arrow
-      .quiz__advantages
-        .quiz__advantages-top
-          .title1 До предварительного расчета стоимости:
-          .title2 Введите свои данные для расчета стоимости натяжого потолка
-          .subtitle.step1 5 вопросов
-          .subtitle.step2 4 вопроса
-          .subtitle.step3 3 вопроса
-          .subtitle.step4 2 вопроса
-          .subtitle.step5 1 вопрос
-        .quiz__advantages-bottom
-          .quiz__advantages-item
-            img.item-img(src='../img/calc.png' alt='')
-            .item-title Расчет стоимости в трех&nbsp;вариантах
-          .quiz__advantages-item
-            img.item-img(src='../img/gifts.png' alt='')
-            .item-title Карниз или светильники в подарок
-      .quiz__form
-        p.itog__title Мы приступили к расчёту
-        p.itog__subtitle Как вам удобнее получить расчёт?
-        label.question__item
-          input.question__radio(type='checkbox' name='calc[]' value='СМС')
-          .question__title СМС
-          span.question__check
-        label.question__item
-          input.question__radio(type='checkbox' name='calc[]' value='WhatsApp')
-          .question__title WhatsApp
-          span.question__check
-        label.question__item
-          input.question__radio(type='checkbox' name='calc[]' value='Бесплатная консультация по телефону. Хочу узнать подробнее о акциях, которые сейчас проходят')
-          .question__title Бесплатная консультация по телефону. <br>Хочу узнать подробнее о акциях, которые сейчас проходят
-          span.question__check
-        .form__number
-          p.itog__subtitle За этим номером будет закреплен выбранный Вами подарок
-          label.form__label
-            input.form__input(type='tel' name='number' placeholder='Ваш телефон' required="")
-            img.input-icon(src='../img/icons/tel.svg' alt='')
-          button.submit__btn(type='submit' value='Получить расчёт') Получить расчёт
+.quiz
+  .quiz__content
+    .quiz-head
+      .quiz__progress.progress
+        .progress__line.line1.active
+          span.progress__color
+        .progress__line.line2
+          span.progress__color
+        .progress__line.line3
+          span.progress__color
+        .progress__line.line4
+          span.progress__color
+        .progress__line.line5
+          span.progress__color
+      .quiz__steps.steps
+        .steps__item.active
+          .steps__title Шаг 1
+          .steps__subtitle Конструкция
+        .steps__item
+          .steps__title Шаг 2
+          .steps__subtitle Фактура
+        .steps__item
+          .steps__title Шаг 3
+          .steps__subtitle Освещение
+        .steps__item
+          .steps__title Шаг 4
+          .steps__subtitle Подарок
+        .steps__item
+          .steps__title Шаг 5
+          .steps__subtitle Контакты
+    .quiz-body
+      form.form.quiz-body__form(action='../quiz.php' method='POST')
+        fieldset.form__fieldset(style='display: flex;')
+          .form__title 1. Выберите конструкцию потолка
+          .form__box
+            .form__wrap
+              label.form__label-radio.active-radio
+                input.form__radio(type='radio' name='construction' value='Одноуровневый')
+                .form__choise
+                  img.form__image(src='../img/construction_1.jpg' alt='Одноуровневый')
+                  .form__answer Одноуровневый
+                  span.form__check
+              label.form__label-radio
+                input.form__radio(type='radio' name='construction' value='Двухуровневый')
+                .form__choise
+                  img.form__image(src='../img/construction_2.jpg' alt='Двухуровневый')
+                  .form__answer Двухуровневый
+                  span.form__check
+              label.form__label-radio
+                input.form__radio(type='radio' name='construction' value='Многоуровневый')
+                .form__choise
+                  img.form__image(src='../img/construction_3.jpg' alt='Многоуровневый')
+                  .form__answer Многоуровневый
+                  span.form__check
+              label.form__label-radio
+                input.form__radio(type='radio' name='construction' value='Не определился(-ась)')
+                .form__choise
+                  img.form__image(src='../img/construction_4.jpg' alt='Не определился(-ась)')
+                  .form__answer Не определился(-ась)
+                  span.form__check
+          .form-button.form-button__indent
+            button.button.button__blick.form-button__btn-next.button--primary Далее
+        fieldset.form__fieldset(style='display: none;')
+          .form__title 2. Выберите фактуру потолка
+          .form__box
+            .form__wrap
+              label.form__label-radio.active-radio
+                input.form__radio(type='radio' name='texture' value='Глянцевый')
+                .form__choise
+                  img.form__image(src='../img/texture_1.jpg' alt='Глянцевый')
+                  .form__answer Глянцевый
+                  span.form__check
+              label.form__label-radio
+                input.form__radio(type='radio' name='texture' value='Матовый')
+                .form__choise
+                  img.form__image(src='../img/texture_2.jpg' alt='Матовый')
+                  .form__answer Матовый
+                  span.form__check
+              label.form__label-radio.active-radio
+                input.form__radio(type='radio' name='texture' value='Сатиновый')
+                .form__choise
+                  img.form__image(src='../img/texture_3.jpg' alt='Сатиновый')
+                  .form__answer Сатиновый
+                  span.form__check
+              label.form__label-radio
+                input.form__radio(type='radio' name='texture' value='Не определился(-ась)')
+                .form__choise
+                  img.form__image(src='../img/construction_4.jpg' alt='Не определился(-ась)')
+                  .form__answer Не определился(-ась)
+                  span.form__check
+          .form-button.form-button__indent
+            button.form-button__btn-prev
+            button.button.button__blick.form-button__btn-next.button--primary Далее
+        fieldset.form__fieldset(style='display: none;')
+          .form__title 3. Выберите тип освещения (можно несколько вариантов)
+          .form__box
+            .form__wrap.check-block
+              label.form__label-checkbox
+                input.form__input(type='checkbox' name='light[]' value='Люстра' checked='')
+                .form__choise
+                  img.form__image(src='../img/lighting_1.jpg' alt='Люстра')
+                  .form__answer Люстра
+                  span.form__check
+              label.form__label-checkbox
+                input.form__input(type='checkbox' name='light[]' value='Точечные светильники' checked='')
+                .form__choise
+                  img.form__image(src='../img/lighting_2.jpg' alt='Точечные светильники')
+                  .form__answer Точечные светильники
+                  span.form__check
+              label.form__label-checkbox
+                input.form__input(type='checkbox' name='light[]' value='Трековое освещение' checked='')
+                .form__choise
+                  img.form__image(src='../img/lighting_3.jpg' alt='Трековое освещение')
+                  .form__answer Трековое освещение
+                  span.form__check
+              label.form__label-checkbox
+                input.form__input(type='checkbox' name='light[]' value='LED-светильники' checked='')
+                .form__choise
+                  img.form__image(src='../img/lighting_4.jpg' alt='LED-светильники')
+                  .form__answer LED-светильники
+                  span.form__check
+              label.form__label-checkbox
+                input.form__input(type='checkbox' name='light[]' value='Светодиодные ленты' checked='')
+                .form__choise
+                  img.form__image(src='../img/lighting_5.jpg' alt='Светодиодные ленты')
+                  .form__answer Светодиодные ленты
+                  span.form__check
+              label.form__label-checkbox
+                input.form__input(type='checkbox' name='light[]' value='Не определился(-ась)' checked='')
+                .form__choise
+                  img.form__image(src='../img/construction_4.jpg' alt='Не определился(-ась)')
+                  .form__answer Не определился(-ась)
+                  span.form__check
+          .form-button.form-button__indent
+            button.form-button__btn-prev
+            button.button.button__blick.form-button__btn-next.button--primary Далее
+        fieldset.form__fieldset(style='display: none;')
+          .form__title 4. Выберите подарок
+          .form__box
+            .form__wrap
+              label.form__label-radio.active-radio._gifts
+                input.form__radio(type='radio' name='gifts' value='Карниз')
+                .form__choise
+                  img.form__image(src='./img/gifts_1.jpg' alt='Карниз')
+                  .form__answer Карниз
+                  span.form__check
+              label.form__label-radio._gifts
+                input.form__radio(type='radio' name='gifts' value='Светильники')
+                .form__choise
+                  img.form__image(src='./img/gifts_2.jpg' alt='Светильники')
+                  .form__answer Светильники
+                  span.form__check
+          .form-button.form-button__indent
+            button.form-button__btn-prev
+            button.button.button__blick.form-button__btn-next.button--primary Далее
+        fieldset.form__fieldset._contacts(style='display: none;')
+          .quiz__form.itog-form
+            p.itog-form__title Мы приступили к расчёту
+            p.itog-form__subtitle Как вам удобнее получить расчёт?
+            label.form__label-checkbox
+              input.form__input(type='checkbox' name='calc[]' value='СМС')
+              .form__answer СМС
+              span.form__check
+            label.form__label-checkbox
+              input.form__input(type='checkbox' name='calc[]' value='WhatsApp')
+              .form__answer WhatsApp
+              span.form__check
+            label.form__label-checkbox
+              input.form__input(type='checkbox' name='calc[]' value='Бесплатная консультация по телефону. Хочу узнать подробнее о акциях, которые сейчас проходят')
+              .form__answer Бесплатная консультация по телефону. <br>Хочу узнать подробнее об акциях, которые сейчас проходят
+              span.form__check
+            .form__number
+              p.itog-form__subtitle За этим номером будет закреплен выбранный Вами подарок
+              label.form__label
+                input.form__input.form__phone(id="quiz__phone" type='tel' name='number' placeholder='Ваш телефон' required="")
+                img.input-icon(src='../img/icons/tel.svg' alt='')
+            button.button.button__blick.quiz-form__button.button--primary(type='submit') Отправить
+    .quiz__advantages.advantages
+      .advantages__top
+        .advantages__title До предварительного расчета стоимости:
+          .advantages__numbers.numbers
+            .numbers__item.active 5 вопросов
+            .numbers__item 4 вопроса
+            .numbers__item 3 вопроса
+            .numbers__item 2 вопроса
+            .numbers__item 1 вопрос
+      .advantages__bottom
+        .advantages__item
+          img.advantages__img(src='../img/calc.png' alt='')
+          .advantages__subtitle Расчет стоимости в трех&nbsp;вариантах
+        .advantages__item
+          img.advantages__img(src='../img/gifts.png' alt='')
+          .advantages__subtitle Карниз или светильники в подарок
+
